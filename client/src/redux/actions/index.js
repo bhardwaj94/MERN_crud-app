@@ -56,7 +56,6 @@ export function authUser() {
             console.log("authRequest>>>>>>",res.data)
             const { isAuth } = res.data;
             if (isAuth) {
-                debugger;
                 dispatch(authSuccess(res.data))
             } else {
 
@@ -68,14 +67,12 @@ export function authUser() {
 }
 
 function authRequest() {
-    debugger;
     return {
         type: 'AUTH_REQUEST'
     }
 }
 
 function authSuccess(data) {
-    debugger;
     return {
         type: 'AUTH_SUCCESS', payload: data
     }

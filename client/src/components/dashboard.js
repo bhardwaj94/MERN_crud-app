@@ -42,7 +42,6 @@ class Dashboard extends React.Component{
         ?this.props.state.authUser:{}
         console.log(">>>>>>>>>user",user);
         const { classes } = this.props;
-        debugger;
         //const bull = <span className={classes.bullet}>•</span>;
         return(
             <Card className={classes.card} centered component>
