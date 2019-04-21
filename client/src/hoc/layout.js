@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/Header/header';
+import Header from '../components/layout/header'
+
 const Layout = (props) => {
     return(
-        <div className="container">
-            <h1>Simple CRUD App</h1><hr/>
+        <div>
             <Header />
             {props.children}
         </div>

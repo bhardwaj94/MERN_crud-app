@@ -1,9 +1,9 @@
 import React from 'react';
-import HomeComponent from '../../containers/home_container';
-const Home = () => {
+
+const Home = (props) => {
     return(
         <div>
-            <HomeComponent />
+            Home
         </div>
     );
 };
